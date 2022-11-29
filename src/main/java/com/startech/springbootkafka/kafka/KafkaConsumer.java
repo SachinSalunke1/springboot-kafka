@@ -7,8 +7,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class KafkaConsumer {
+    //logger slf4j used
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaConsumer.class);
 
+    //kafka listener test comment
     @KafkaListener(topics = "javaguides", groupId = "myGroup")
     public void consume(String message) {
         LOGGER.info(String.format("Message recieved -> %s", message));
