@@ -17,10 +17,12 @@ public class KafkaTopicConfig {
     public NewTopic javaguidesTopic(){
         return TopicBuilder.name("javaguides").build();
     }
-    public void addNewMethodForGitTest(){
-        System.out.println("This method added from other user");
+    public void addNewMethodForGitTest1(){
+        System.out.println("This method1 added from other user");
     }
-
+    public void addNewMethodForGitTest2(){
+        System.out.println("This method2 added from other user");
+    }
     @Bean
     public NewTopic javaguidesJsonTopic(){
         return TopicBuilder.name("javaguides_json")
