@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class JsonKafkaConsumer {
 
+    //logger used slf4j
     private static  final Logger LOGGER = LoggerFactory.getLogger(JsonKafkaConsumer.class);
 
     @KafkaListener(topics = "javaguides_json",groupId = "myGroup")
