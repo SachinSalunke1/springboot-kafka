@@ -11,8 +11,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class JsonKafkaProducer {
+
+    //logger used SLF4J
     private static final Logger LOGGER = LoggerFactory.getLogger(JsonKafkaProducer.class);
 
+    //prefix the class name to identify springboot for the configuration
     private KafkaTemplate<String, User> userKafkaTemplate;
 
     public JsonKafkaProducer(KafkaTemplate<String, User> userKafkaTemplate) {
